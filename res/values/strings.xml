@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ajitest</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="ipaddress">http://192.168.1.128:8787/aji/example1.html</string>
+</resources>

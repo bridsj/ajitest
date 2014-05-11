@@ -18,8 +18,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//n
-import android.webkit.JavascriptInterface;
+// below is for api 17 and above
+//import android.webkit.JavascriptInterface;
 
 
 public class MainActivity extends Activity {
@@ -71,12 +71,14 @@ public class MainActivity extends Activity {
             Toast.makeText(mContext, description, Toast.LENGTH_SHORT).show();
         }
 	    
-	    @JavascriptInterface
+	    // below is needed for 17 and above
+	    //@JavascriptInterface
     	public void log(String msg){
     		Log.d("AJSI MESSAGE: ", msg);
     	}
 	    
-	    @JavascriptInterface
+	    // below is needed for 17 and above
+	    //@JavascriptInterface
 	    public void showToast(String webMessage){	    	
 	    	final String msgeToast = webMessage;	    	
 	    	 myHandler.post(new Runnable() {
